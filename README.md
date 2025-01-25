@@ -2,7 +2,7 @@ Installing Repos
 
         repo init -u https://github.com/LineageOS/android.git -b lineage-22.1 --git-lfs
 
-        git clone https://github.com/ATI-Experiments/local-manifests.git -b lineage-22.1 .repo/local_manifests/
+        git clone https://github.com/h0353914/local-manifests.git -b lineage-22.1 .repo/local_manifests/
         
 sync repo
 
