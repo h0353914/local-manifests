@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+    <remote name="gitea" fetch="https://gitea.angry.im/" />
     <!-- blobs for Sony device trees -->
-    <project name="ATI-Experiments/android_device_sony_yoshino" path="device/sony/yoshino" remote="github" revision="lineage-22.1" />
-    <project name="ATI-Experiments/android_device_sony_yoshino-common" path="device/sony/yoshino-common" remote="github" revision="lineage-22.1" />
+    <project name="h0353914/android_device_sony_yoshino" path="device/sony/yoshino" remote="github" revision="lineage-22.1_my" />
+    <project name="h0353914/android_device_sony_yoshino-common" path="device/sony/yoshino-common" remote="github" revision="lineage-22.1_my" />
 
     <!-- blobs for msm8998 kernel -->
     <project name="ATI-Experiments/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-22.1" />
@@ -13,7 +14,9 @@
     <project name="ATI-Experiments/android_vendor_sony_camera" path="vendor/sony/camera" remote="github" revision="lineage-22.1" />
 
     <!-- OpenEUICC -->
-    <project name="openeuicc/android_openeuicc" path="packages/apps/OpenEUICC" remote="github" revision="main" clone-depth="1">
+    <project name="h0353914/openeuicc" path="packages/apps/OpenEUICC" remote="github" revision="master">
         <annotation name="sync-s" value="true" />
     </project>
+    <project name="PeterCxy/android_prebuilts_openeuicc-deps" path="prebuilts/openeuicc-deps" remote="gitea" revision="master" />
+
 </manifest>
