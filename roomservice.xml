@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+    <!-- 自訂 remote 來源，用於特定倉庫，如 OpenEUICC 依賴 -->
     <remote name="gitea" fetch="https://gitea.angry.im/" />
 
-      <!-- blobs for Sony device trees -->
-      <project name="ATI-Experiments/android_device_sony_yoshino" path="device/sony/yoshino" remote="github" revision="lineage-22.1" />
-      <project name="h0353914/android_device_sony_yoshino-common" path="device/sony/yoshino-common" remote="github" revision="lineage-22.1" />
+    <!-- Sony 裝置樹 blobs (device trees) -->
+    <project name="h0353914/android_device_sony_poplar_kddi" path="device/sony/poplar_kddi" remote="github" revision="lineage-21" />
+    <project name="h0353914/android_device_sony_yoshino-common" path="device/sony/yoshino-common" remote="github" revision="lineage-21" />
 
-      <!-- blobs for msm8998 kernel -->
-      <project name="ATI-Experiments/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-22.1" />
-    
-      <!-- blobs for msm8998 vendor -->
-      <project name="ATI-Experiments/android_vendor_sony_yoshino" path="vendor/sony/yoshino" remote="github" revision="lineage-22.1" />
-      <project name="ATI-Experiments/android_vendor_sony_yoshino-common" path="vendor/sony/yoshino-common" remote="github" revision="lineage-22.1" />
-      <project name="h0353914/android_vendor_sony_camera" path="vendor/sony/camera" remote="github" revision="lineage-22.1" />
+    <!-- msm8998 核心 blobs (kernel source) -->
+    <project name="h0353914/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-21" />
 
-      <!-- OpenEUICC -->
-      <project name="estkme-group/openeuicc" path="packages/apps/OpenEUICC" remote="github" revision="master">
+    <!-- msm8998 vendor blobs (驅動及專有元件) -->
+    <project name="whatawurst/android_vendor_sony_poplar_kddi" path="vendor/sony/poplar_kddi" remote="github" revision="lineage-21" />
+    <project name="SirRGB/android_vendor_sony_yoshino-common" path="vendor/sony/yoshino-common" remote="github" revision="lineage-21" />
+    <project name="h0353914/android_vendor_sony_camera" path="vendor/sony/camera" remote="github" revision="lineage-22.1" />
+
+    <!-- OpenEUICC (eSIM 管理應用) -->
+    <project name="h0353914/openeuicc" path="packages/apps/OpenEUICC" remote="github" revision="master_21">
         <annotation name="sync-s" value="true" />
-      </project>
-      <project name="PeterCxy/android_prebuilts_openeuicc-deps" path="prebuilts/openeuicc-deps" remote="gitea" revision="master" />
+    </project>
+    <project name="PeterCxy/android_prebuilts_openeuicc-deps" path="prebuilts/openeuicc-deps" remote="gitea" revision="master" />
 
-      <!-- Seedvault -->
-      <project name="seedvault-app/seedvault" path="packages/apps/Seedvault" remote="github" revision="android15"/>
+    <!-- 移除舊的 system/extras -->
+    <remove-project name="LineageOS/android_system_extras" />
+
+    <!-- 自訂的 system/extras 倉庫，已移除 su 目錄以避免 KernelSU 衝突： -->
+    <project name="h0353914/system_extras" path="system/extras" remote="github" revision="lineage-21.0" />
 </manifest>
