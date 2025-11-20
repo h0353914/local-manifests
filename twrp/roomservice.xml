@@ -16,4 +16,6 @@
    <project name="h0353914/android_device_sony_poplar_kddi" path="device/sony/poplar_kddi" remote="github" revision="android-12.1" />
    <project name="whatawurst/android_vendor_sony_poplar_kddi" path="vendor/sony/poplar_kddi" remote="github" revision="lineage-21" />
 
+   <project name="h0353914/android_device_sony_maple" path="device/sony/maple" remote="github" revision="android-12.1" />
+   <project name="whatawurst/android_vendor_sony_maple" path="vendor/sony/maple" remote="github" revision="lineage-21" />
 </manifest>
