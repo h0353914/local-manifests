@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-   <project name="h0353914/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-21_twrp" />
+   <project name="h0353914/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="twrp-12.1" />
    <project name="j4nn/android_device_sony_yoshino-common" path="device/sony/yoshino-common" remote="github" revision="android-12.1" />
-   <project name="h0353914/android_device_sony_poplar" path="device/sony/poplar" remote="github" revision="android-12.1" />
+   <project name="h0353914/android_device_sony_poplar" path="device/sony/poplar" remote="github" revision="twrp-12.1" />
    <project name="j4nn/android_device_sony_lilac" path="device/sony/lilac" remote="github" revision="android-12.1" />
-   <project name="h0353914/android_device_sony_maple" path="device/sony/maple" remote="github" revision="android-12.1" />
+   <project name="h0353914/android_device_sony_maple" path="device/sony/maple" remote="github" revision="twrp-12.1" />
 </manifest>
