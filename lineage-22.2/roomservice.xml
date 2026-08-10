@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="log1cs/android_device_sony_poplar" path="device/sony/poplar" remote="github" revision="lineage-22.2" />
+  <project name="h0353914/android_device_sony_yoshino-common" path="device/sony/yoshino-common" remote="github" revision="lineage-22.2" />
+  <project name="log1cs/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-22.2" />
+  <project name="log1cs/proprietary_vendor_sony_poplar" path="vendor/sony/poplar" remote="github" revision="lineage-22.2" />
+  <project name="log1cs/proprietary_vendor_sony_yoshino-common" path="vendor/sony/yoshino-common" remote="github" revision="lineage-22.2" />
+  <project name="h0353914/android_vendor_sony_camera" path="vendor/sony/camera" remote="github" revision="lineage-22.2" />
+</manifest>
