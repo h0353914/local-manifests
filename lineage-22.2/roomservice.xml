@@ -1,20 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <!-- device trees -->
   <project name="h0353914/android_device_sony_yoshino-common" path="device/sony/yoshino-common" remote="github" revision="lineage-22.2" />
   <project name="h0353914/android_device_sony_poplardcm" path="device/sony/poplardcm" remote="github" revision="lineage-22.2" />
-  <project name="log1cs/android_device_sony_poplar" path="device/sony/poplar" remote="github" revision="lineage-22.2" />
 
+  <!-- proprietary vendor blobs -->
   <project name="h0353914/proprietary_vendor_sony_yoshino-common" path="vendor/sony/yoshino-common" remote="github" revision="lineage-22.2" />
   <project name="h0353914/proprietary_vendor_sony_poplardcm" path="vendor/sony/poplardcm" remote="github" revision="lineage-22.2" />
-  <project name="log1cs/proprietary_vendor_sony_poplar" path="vendor/sony/poplar" remote="github" revision="lineage-22.2" />
 
-  <project name="log1cs/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-22.2" />
+  <!-- kernel -->
+  <project name="h0353914/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-22.2" />
 
+  <!-- Sony camera -->
   <project name="h0353914/android_vendor_sony_camera" path="vendor/sony/camera" remote="github" revision="lineage-22.2" />
   <project name="h0353914/libcacao" path="vendor/sony/camera/cacao" remote="github" revision="lineage-22.2" />
   <project name="h0353914/SemcCameraUI-xxhdpi-release" path="vendor/sony/camera/apps/SemcCameraUI" remote="github" revision="java-2.2.2.A.0.15-a15" />
   <project name="h0353914/CameraPanorama-release" path="vendor/sony/camera/apps/CameraPanorama" remote="github" revision="java-3.0.1.B.0.0-a15" />
 
+  <!-- FeliCa -->
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <remove-project name="LineageOS/android_packages_apps_Nfc" />
+  <project name="h0353914/android_frameworks_base" path="frameworks/base" remote="github" revision="lineage-22.2_felica" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+  <project name="h0353914/android_packages_apps_Nfc" path="packages/apps/Nfc" remote="github" revision="lineage-22.2_felica" groups="apps_nfc,pdk-fs,pdk-cw-fs" />
+
+  <!-- LineageOS-official libs, auto-fetched by roomservice -->
   <project path="hardware/sony/macaddrsetup" remote="github" name="LineageOS/android_hardware_sony_macaddrsetup" />
   <project path="hardware/sony/simdetect" remote="github" name="LineageOS/android_hardware_sony_simdetect" />
 </manifest>
