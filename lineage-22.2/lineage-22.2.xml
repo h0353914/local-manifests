@@ -2,7 +2,7 @@
 <manifest>
   <!-- device trees -->
   <project name="log1cs/android_device_sony_yoshino-common" path="device/sony/yoshino-common" remote="github" revision="lineage-22.2" />
-  <project name="log1cs/android_device_sony_poplar" path="device/sony/poplardcm" remote="github" revision="lineage-22.2" />
+  <project name="log1cs/android_device_sony_poplar" path="device/sony/poplar" remote="github" revision="lineage-22.2" />
 
   <!-- proprietary vendor blobs -->
   <project name="log1cs/proprietary_vendor_sony_yoshino-common" path="vendor/sony/yoshino-common" remote="github" revision="lineage-22.2" />
