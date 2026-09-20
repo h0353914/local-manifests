@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- device trees -->
+  <project name="log1cs/android_device_sony_yoshino-common" path="device/sony/yoshino-common" remote="github" revision="lineage-22.2" />
+  <project name="log1cs/android_device_sony_poplar" path="device/sony/poplardcm" remote="github" revision="lineage-22.2" />
+
+  <!-- proprietary vendor blobs -->
+  <project name="log1cs/proprietary_vendor_sony_yoshino-common" path="vendor/sony/yoshino-common" remote="github" revision="lineage-22.2" />
+  <project name="log1cs/proprietary_vendor_sony_poplar" path="vendor/sony/poplar" remote="github" revision="lineage-22.2" />
+
+  <!-- kernel -->
+  <project name="log1cs/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-22.2" />
+
+  <!-- LineageOS-official libs, auto-fetched by roomservice -->
+  <project path="hardware/sony/macaddrsetup" remote="github" name="LineageOS/android_hardware_sony_macaddrsetup" />
+  <project path="hardware/sony/simdetect" remote="github" name="LineageOS/android_hardware_sony_simdetect" />
+</manifest>
