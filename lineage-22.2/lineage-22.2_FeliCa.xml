@@ -9,7 +9,7 @@
   <project name="h0353914/proprietary_vendor_sony_poplardcm" path="vendor/sony/poplardcm" remote="github" revision="lineage-22.2" />
 
   <!-- kernel -->
-  <project name="h0353914/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-22.2" />
+  <project name="h0353914/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-22.2_ksu" />
 
   <!-- Sony camera -->
   <project name="h0353914/android_vendor_sony_camera" path="vendor/sony/camera" remote="github" revision="lineage-22.2" sync-s="true" />
