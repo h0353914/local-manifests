@@ -6,18 +6,16 @@
 
   <!-- proprietary vendor blobs -->
   <project name="h0353914/proprietary_vendor_sony_yoshino-common" path="vendor/sony/yoshino-common" remote="github" revision="lineage-22.2" />
-  <project name="h0353914/proprietary_vendor_sony_poplardcm" path="vendor/sony/poplardcm" remote="github" revision="lineage-22.2" />
+  <project name="h0353914/proprietary_vendor_sony_poplardcm" path="vendor/sony/poplardcm" remote="github" revision="lineage-22.2_FeliCa" />
 
   <!-- kernel -->
-  <project name="h0353914/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-22.2_ksu" />
+  <project name="h0353914/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-22.2_ksu" sync-s="true" />
 
   <!-- Sony camera -->
   <project name="h0353914/android_vendor_sony_camera" path="vendor/sony/camera" remote="github" revision="lineage-22.2" sync-s="true" />
 
   <!-- FeliCa -->
-  <remove-project name="LineageOS/android_frameworks_base" />
   <remove-project name="LineageOS/android_packages_apps_Nfc" />
-  <project name="h0353914/android_frameworks_base" path="frameworks/base" remote="github" revision="lineage-22.2_felica" groups="pdk-cw-fs,pdk-fs,sysui-studio" />
   <project name="h0353914/android_packages_apps_Nfc" path="packages/apps/Nfc" remote="github" revision="lineage-22.2_felica" groups="apps_nfc,pdk-fs,pdk-cw-fs" />
   
   <!-- OpenEUICC -->
